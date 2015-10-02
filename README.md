@@ -2,6 +2,12 @@
 
 accept loosely formatted json, output strictly formatted json
 
+## Install / Update
+
+```
+go get -f -u -v github.com/phinze/jsonfmt
+```
+
 ## Usage
 
 ```
@@ -48,7 +54,8 @@ autocmd BufWritePre *.json call JsonFormat()
 
 ## Acknowledgements
 
-Uses @daviddengcn's [ljson](https://github.com/daviddengcn/ljson) for the loose
-input parsing.
-
-Vim code inspired by @fatih's [vim-go](https://github.com/fatih/vim-go).
+ * Uses [@daviddengcn](https://github.com/daviddengcn)'s
+   [ljson](https://github.com/daviddengcn/ljson) for the loose
+   input parsing a.k.a. the actually difficult part ;D
+ * Vim code stolen from [@fatih](https://github.com/fatih)'s delightful
+   [vim-go](https://github.com/fatih/vim-go) project.
